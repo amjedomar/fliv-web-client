@@ -18,7 +18,7 @@ const Document = () => {
         />
       </Head>
 
-      <body className="font-inter antialiased bg-white text-slate-800 tracking-tight">
+      <body className="has-animations is-loaded">
         <Main />
         <NextScript />
       </body>

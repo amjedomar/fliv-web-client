@@ -2,6 +2,7 @@ import type { AppProps } from "next/app";
 import { ThemeProvider } from "@emotion/react";
 // import "aos/dist/aos.css";
 import "../styles/features.css";
+import FeaturesSplit from "../components/FeaturesSplit";
 // import { useEffect } from "react";
 // import AOS from "aos";
 
@@ -37,11 +38,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   //   });
   // });
 
-  return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-    </ThemeProvider>
-  );
+  return <FeaturesSplit />
+  // return (
+  //   <ThemeProvider theme={theme}>
+  //     <Component {...pageProps} />
+  //   </ThemeProvider>
+  // );
 }
 
 export default MyApp;
