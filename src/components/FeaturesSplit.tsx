@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import SplitItem from "./SplitItem";
 
 const img01Style = {
   position: "absolute",
@@ -77,7 +78,7 @@ const FeaturesSplit = () => {
                     src="/features-split-image.svg"
                     width="528"
                     height="396"
-                    alt="Features split 01"
+                    alt="Features split"
                   />
                   <div style={img01Style}>
                     <img
@@ -116,7 +117,7 @@ const FeaturesSplit = () => {
                     src="/features-split-image.svg"
                     width="528"
                     height="396"
-                    alt="Features split 02"
+                    alt="Features split"
                   />
                   <div style={img02Style}>
                     <img
@@ -156,7 +157,7 @@ const FeaturesSplit = () => {
                     src="/features-split-image.svg"
                     width="528"
                     height="396"
-                    alt="Features split 03"
+                    alt="Features split"
                   />
                   <div style={img03Style}>
                     <img
