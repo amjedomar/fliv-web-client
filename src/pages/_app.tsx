@@ -1,9 +1,10 @@
 import type { AppProps } from "next/app";
 import { ThemeProvider } from "@emotion/react";
-import '../styles/index.css';
+import "../styles/index.css";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import AOS from "aos";
+import Head from "next/head";
 
 declare module "@emotion/react" {
   export interface Theme {
@@ -36,9 +37,14 @@ function MyApp({ Component, pageProps }: AppProps) {
       easing: "ease-out-cubic",
     });
   });
-  
+
   return (
     <ThemeProvider theme={theme}>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta name="theme-color" content={theme.palette.primary.main} />
+      </Head>
       <Component {...pageProps} />
     </ThemeProvider>
   );

@@ -129,23 +129,6 @@ function Header() {
               </li>
             </ul>
           </nav>
-
-          {/* Mobile menu */}
-          <div className="flex md:hidden">
-            {/* Hamburger button */}
-            <button className={`hamburger`} aria-controls="mobile-nav">
-              <span className="sr-only">Menu</span>
-              <svg
-                className="w-6 h-6 fill-current text-slate-900 dark:text-slate-100"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect y="4" width="24" height="2" />
-                <rect y="11" width="24" height="2" />
-                <rect y="18" width="24" height="2" />
-              </svg>
-            </button>
-          </div>
         </div>
       </div>
     </header>
