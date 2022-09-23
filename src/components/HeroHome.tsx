@@ -1,3 +1,5 @@
+import { useContext } from "react";
+
 function HeroHome() {
   return (
     <section className="relative">
@@ -32,12 +34,14 @@ function HeroHome() {
                 <div>
                   <a
                     className="btn text-white bg-blue-600 hover:bg-blue-700 w-full group"
-                    href="/request-demo"
+                    css={{ cursor: "pointer" }}
+                    onClick={() => {
+                      document
+                        .getElementById("request-demo")
+                        ?.scrollIntoView({ behavior: "smooth" });
+                    }}
                   >
-                    Request Demo{" "}
-                    <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
-                      -&gt;
-                    </span>
+                    Request Demo
                   </a>
                 </div>
                 {/* <div>
